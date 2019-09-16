@@ -1,0 +1,189 @@
+body{
+    background: rgb(58,58,58);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(52, 170, 185);
+    background-image: url(images/city.jpg);
+    background-size: 100%;
+    padding: 20px;
+    height: 400px;
+    text-align: center;
+
+}
+
+header a{
+
+    color: rgba(0, 56, 88, 0.534);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 4px;
+
+}
+
+
+header .logo a{
+    background-image: url("images/piccc.png");
+    background-size: 125px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    top: -25px;
+    text-align: center;
+    position: relative;
+    text-indent: -9999999px;
+}
+
+.features{
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+h4{
+    display: block;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+  p{
+    border-style: solid;
+    border-width: 0 0 .1px 0;
+    width: 700px;
+    margin: 0 0 0 0;
+    text-justify: auto;
+    padding: 0 0 30px 0;
+}
+
+
+.features figure img {
+    width: 200px;
+    box-shadow: gray 0 0 10px;
+    
+}
+img{
+    width: 200px;
+    box-shadow: gray 0 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+figcaption{
+ width: 200px;
+ padding: 0 0 120px 0;
+}
+
+figure h4 {
+    width: 100px;
+}
+
+.features div{
+    border-style: solid;
+    border-width: 0px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+
+div:first-child{
+    border: none;
+    padding: 100px 0 0 0;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    margin-right: 20px;
+}
+
+footer{
+    background: black;
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+/* RESPONSIVE RULES */
+header .mobile {
+    display: none;
+}
+
+@media screen and (max-width: 582px) {
+    header{
+        height: 200px;
+    }
+   header .logo a{
+        background-size: 100px;
+        top: 0px;
+    }
+    header .mobile{
+        display:inline-block;
+    }
+
+    header .desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 666px) {
+header{
+    height: 300px;
+}
+
+p{
+    width: 345px;
+}
+}
+@media screen and (max-width: 500px) {
+    header{
+        height: 250px;
+    }
+
+    p{
+ 
+        width: 185px;
+        margin: 0 0 0 0;
+        text-justify: auto;
+        padding: 0 0 30px 0;    
+    }
+}
+
+@media screen and (max-width: 889px) {
+    header{
+        height: 280px;
+    }
+
+    p{
+ 
+        width: 550px;
+        margin: 0 0 0 0;
+        text-justify: auto;
+        padding: 0 0 30px 0;    
+    }
+}
